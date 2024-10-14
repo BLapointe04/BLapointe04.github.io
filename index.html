@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
+            background-color: #f0f0f0; /* Light background for the body */
         }
         h1, h2 {
             color: #333;
@@ -33,14 +34,32 @@
             text-decoration: underline;
         }
         .problem-statement {
-            background-color: #e0e0e0; /* Background box color */
+            position: relative; /* For positioning the pseudo-element */
             padding: 20px;
             border-radius: 5px;
             text-align: center; /* Center the image */
+            overflow: hidden; /* To contain the pseudo-element */
+        }
+        .problem-statement::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #e0e0e0 25%, transparent 25%) -50px 0,
+                        linear-gradient(225deg, #e0e0e0 25%, transparent 25%) -50px 0,
+                        linear-gradient(315deg, #e0e0e0 25%, transparent 25%),
+                        linear-gradient(45deg, #e0e0e0 25%, transparent 25%);
+            background-size: 100px 100px;
+            z-index: 0; /* Behind the image */
+            opacity: 0.5; /* Adjust transparency if needed */
         }
         .problem-statement img {
             max-width: 100%; /* Responsive image */
             height: auto;
+            position: relative; /* Keep the image above the background */
+            z-index: 1; /* Above the pseudo-element */
         }
     </style>
 </head>
@@ -71,12 +90,9 @@
         
         <section class="problem-statement">
             <h2>Problem Statement</h2>
-            <img src="https://github.com/BLapointe04/BLapointe04.github.io/raw/main/images/Screenshot 2024-10-14 at 10.56.10 AM.png" alt="Problem Statement Image">
+            <img src="images/Screenshot 2024-10-14 at 12.06.41 PM.png" alt="Problem Statement Image">
         </section>
     </div>
 </body>
 </html>
 
-    </div>
-</body>
-</html>
