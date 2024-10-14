@@ -37,7 +37,7 @@
             position: relative; /* For positioning the pseudo-element */
             padding: 20px;
             border-radius: 5px;
-            text-align: center; /* Center the image */
+            text-align: center; /* Center the images */
             overflow: hidden; /* To contain the pseudo-element */
         }
         .problem-statement::before {
@@ -52,14 +52,15 @@
                         linear-gradient(315deg, #e0e0e0 25%, transparent 25%),
                         linear-gradient(45deg, #e0e0e0 25%, transparent 25%);
             background-size: 100px 100px;
-            z-index: 0; /* Behind the image */
+            z-index: 0; /* Behind the images */
             opacity: 0.5; /* Adjust transparency if needed */
         }
         .problem-statement img {
-            max-width: 100%; /* Responsive image */
+            max-width: 100%; /* Responsive images */
             height: auto;
-            position: relative; /* Keep the image above the background */
+            position: relative; /* Keep the images above the background */
             z-index: 1; /* Above the pseudo-element */
+            margin: 10px 0; /* Add some space between the images */
         }
     </style>
 </head>
@@ -90,9 +91,11 @@
         
         <section class="problem-statement">
             <h2>Problem Statement</h2>
-            <img src="images/Screenshot 2024-10-14 at 12.06.41 PM.png" alt="Problem Statement Image">
+            <img src="images/Screenshot 2024-10-14 at 10.56.10 AM.png" alt="First Problem Statement Image">
+            <img src="images/Screenshot 2024-10-14 at 12.06.41 PM.png" alt="Second Problem Statement Image">
         </section>
     </div>
 </body>
 </html>
+
 
