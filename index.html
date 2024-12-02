@@ -1,98 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSCE 190: Brayden</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f0f0f0;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .problem-statement {
-            background-color: #e0e0e0;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .problem-statement img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-        }
-        .prototype {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .prototype img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .download-pdf {
-            text-align: center;
-            margin: 20px 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f9f9;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      h1, h2 {
+        color: #1a73e8;
+      }
+      h3 {
+        color: #ff5722;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      header img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+      .about, .skills, .projects, .contact {
+        margin-bottom: 30px;
+      }
+      .projects section {
+        background-color: #e0f7fa;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+      }
+      .projects img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 10px;
+      }
+      .contact p {
+        font-size: 1.1rem;
+      }
+      .download-link a {
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .download-link a:hover {
+        text-decoration: underline;
+      }
+      iframe {
+        display: block;
+        margin: 20px auto;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header class="section">
-            <h1>Brayden</h1> 
-            <img src="images/Me.jpg" alt="Me">
-        </header>
+      <header>
+        <h1>Brayden</h1>
+        <img src="images/Me.jpg" alt="Brayden Profile">
+      </header>
 
-        <section class="section about-me">
-            <h2>About Me</h2>
-            <p>Hello! I'm Brayden, a student in CSCE 190. I'm passionate about COMPUTERS!!. This webpage is a simple introduction to who I am and what I do.</p>
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Brayden, a student at USC Columbia studying Computer Science. I am passionate about technology and its potential to transform lives. I want to use my skills to contribute to meaningful projects and help solve real-world problems.
+        </p>
+        <p>
+          My goal is to have a high-paying software job where I can be a valued employee contributing to impactful work. I'm always seeking new ways to challenge myself and grow in my field.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <p><b>Coding Languages:</b> Java, Python, HTML/CSS, JavaScript</p>
+        <p class="download-link">
+          <b>Resume:</b> <a href="files/Resume_updated.pdf" target="_blank">Download here</a>
+        </p>
+      </section>
+
+      <section class="projects">
+        <h2>Highlighted Projects</h2>
+
+        <!-- Problem Statement Assignment -->
+        <section class="project">
+          <a href="files/pdf_problem_statement.pdf">
+            <h3>Problem Statement</h3>
+            <img src="images/problem_statement.png" alt="Problem Statement Image">
+          </a>
+          <p>
+            Students at universities or in college often find it difficult to manage their time while balancing academic work, extracurricular activities, and social life.
+          </p>
         </section>
 
-        <section class="section highlighted-projects">
-            <h2>Highlighted Projects</h2>
-            <ul>
-                <li><strong>Project 1:</strong> Description of first project.</li>
-                <li><strong>Project 2:</strong> Description of second project.</li>
-            </ul>
+        <!-- Affinity Diagram Assignment -->
+        <section class="project">
+          <a href="files/Affinity_Diagram.pdf">
+            <h3>Affinity Diagram</h3>
+            <img src="images/Affinity_Diagram.png" alt="Affinity Diagram">
+          </a>
+          <p>
+            This affinity diagram explores 5 categories and 20 ideas on how students can manage their time more effectively in school or college.
+          </p>
         </section>
 
-        <section class="section contact-info">
-            <h2>Contact Me</h2>
-            <p>You can reach me via email at <a href="mailto:your-email@example.com">brayden9918@gmail.com</a>.</p>
+        <!-- Sketches Assignment -->
+        <section class="project">
+          <a href="files/sketches.pdf">
+            <h3>Sketches</h3>
+            <img src="images/sketches.png" alt="Sketches">
+          </a>
+          <p>
+            Three sketches of a mobile app focused on time management for students.
+          </p>
         </section>
 
-        <section class="problem-statement">
-            <h2>Problem Statement</h2>
-            <p>This section outlines the main problems identified and highlights key insights.</p>
-            <img src="images/Screenshot 2024-10-14 at 10.56.10 AM.png" alt="First Problem Statement Image">
-            <img src="images/Screenshot 2024-10-14 at 12.06.41 PM.png" alt="Second Problem Statement Image">
+        <!-- Paper Prototype Video Assignment -->
+        <section class="project">
+          <h3>Video Concept</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1Kvr22xBRvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>
+            This video explains the paper prototype of the time management app.
+          </p>
         </section>
+      </section>
 
-        <section class="prototype">
-            <h2>Prototype</h2>
-            <p>The image below represents a visual prototype created for the project.</p>
-            <img src="images/Proto.jpg" alt="Prototype Image" style="max-width: 50%; height: auto;">
-        </section>
-
-        <!-- Display PDF directly -->
-        <section class="download-pdf">
-            <h2>Project Document</h2>
-            <p>Below is the PDF document for the project:</p>
-            <embed href="images/190.pdf" width="100%" height="600px" type="application/pdf">
-        </section>
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:brayden9918@gmail.com">brayden9918@gmail.com</a></p>
+      </section>
     </div>
-</body>
+  </body>
 </html>
+
 
 
