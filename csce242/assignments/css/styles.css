@@ -1,16 +1,15 @@
 /* Structure */
-
-
-
-/* Typography*/
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 div {
-    background: limegreen;
+    background: rgb(21, 113, 156);
     width: 70%;
+    margin:auto;  /* center */
+    padding:1%; /*get text awayb from edges*/
+    border-radius:5px; /*rounded corners*/
 }
-
+ /* Typography*/
 h1 {
     color:aqua;
 }
