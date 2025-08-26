@@ -4,7 +4,11 @@
 
 /* Typography*/
 body {
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    background: limegreen;
+    width: 70%;
 }
 
 h1 {
