@@ -1,0 +1,23 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(".../images/otter.jpeg");
+    background-size:cover;
+}
+#content {
+    background:#0d77b9;
+    width:70%;  
+    margin:auto;    /* center */
+    padding:1%;   /* get text away from edge */
+    border-radius:5px;  /* round corners */
+}
+
+
+
+/*Typography*/
+h1 {
+    color:rgb(21, 90, 93)
+}
+h2 {
+    color:rgb(59, 174, 219);
+}
