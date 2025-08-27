@@ -1,23 +1,29 @@
 /* Structure */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background:url(".../images/otter.jpeg");
+    background:url("../csce242/assignments/images/background.jpeg");
     background-size:cover;
 }
 #content {
-    background:#0d77b9;
-    width:70%;  
-    margin:auto;    /* center */
-    padding:1%;   /* get text away from edge */
-    border-radius:5px;  /* round corners */
+    background: rgb(19, 180, 255);
+    width: 15%;
+    margin:auto;  /* center */
+    padding:1%; /*get text awayb from edges*/
+    border-radius:5px; /*rounded corners*/
 }
 
-
+#content a {
+    text-decoration: none;
+    color: rgb(221, 227, 231);
+}
 
 /*Typography*/
 h1 {
     color:rgb(21, 90, 93)
 }
 h2 {
-    color:rgb(59, 174, 219);
+    color:rgb(21, 90, 93);
+}
+p1 {
+    color: rgb(21, 90, 93);
 }
