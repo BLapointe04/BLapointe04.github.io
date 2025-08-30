@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>CSCE 242: Brayden Lapointe</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>CSCSE 242 - Brayden Lapointe</h1>
-        <p1> The web applications class in my eyes will be the course to help us succcessfully learn HTML as well as being bale to make function web pages. As well as learn things such as source control, wed development, server side applications</p1>
-        <p><a href="https://github.com/BLapointe04/BLapointe04.github.io/tree/main/csce242">My Personal Github</a></p>
-       
-       
-        <div id="content">
-            <h2>Assignments</h2>
-       
-       
-         <ol>
-            <li><a href="assignments/01html/index.html">Basic HTML</a></li>
-            <li><a href="assignments/02html/index.html">Basic CSS</a></li>
-        </ol>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSCE 242: Brayden Lapointe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>CSCE 242 - Web Applications</h1>
+    <p>
+      The web applications class will teach us to build functional websites using
+      HTML, CSS, and more. We'll learn modern techniques like source control,
+      web development, and server-side applications.
+    </p>
+    <p>
+      <a href="https://github.com/BLapointe04/BLapointe04.github.io/tree/main/csce242" target="_blank">
+        View My GitHub Repository
+      </a>
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <div id="content">
+    <h2>Assignments</h2>
+
+    <div class="assignments">
+      <!-- Assignment 1 -->
+      <div class="assignment-card">
+        <a href="assignments/01html/index.html">
+          <img src="assignments/images/a01.jpeg" alt="Assignment 1 Screenshot" />
+        </a>
+        <h3><a href="assignments/01html/index.html">Assignment 1: Basic HTML</a></h3>
+        <p>
+          Built a basic HTML page using headings, lists, links, and semantic
+          structure to understand page layouts.
+        </p>
+      </div>
+
+      <!-- Assignment 2 -->
+      <div class="assignment-card">
+        <a href="assignments/02html/index.html">
+          <img src="assignments/images/a02.jpeg" alt="Assignment 2 Screenshot" />
+        </a>
+        <h3><a href="assignments/02html/index.html">Assignment 2: Basic CSS</a></h3>
+        <p>
+          Learned to style pages using an external stylesheet, experimenting with
+          colors, fonts, spacing, and borders.
+        </p>
+      </div>
+
+      <!-- Assignment 3 -->
+      <div class="assignment-card">
+        <a href="assignments/03layout/index.html">
+          <img src="assignments/images/a03.jpg" alt="Assignment 3 Screenshot" />
+        </a>
+        <h3><a href="assignments/03layout/index.html">Assignment 3: Page Layout</a></h3>
+        <p>
+          Applied Flexbox to build responsive multi-column layouts, matching the
+          provided wireframe diagrams.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Brayden Lapointe • CSCE 242</p>
+  </footer>
+
+  <script>
+    // Keep footer year up to date
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
