@@ -79,18 +79,21 @@ header a:hover {
 /* Default image size for assignments */
 .assignment-card img {
   width: 100%;
-  height: 160px;     /* Keep assignments as-is */
+  height: 160px;       /* Keep assignments images taller */
   object-fit: cover;
   border-radius: 3px;
   display: block;
   margin-bottom: 8px;
 }
 
-/* ↓↓↓ ONLY shrink project images ↓↓↓ */
+/* ↓↓↓ ONLY project images get fixed width/height ↓↓↓ */
 .projects .assignment-card img {
-  height: 120px;     /* Smaller height for project images */
-  object-fit: cover; /* Keep proportions */
-  margin-bottom: 8px;
+  width: 250px;        /* Fixed width for project images */
+  height: 140px;       /* Fixed height for project images */
+  object-fit: cover;   /* Crop extra parts instead of stretching */
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto 8px auto; /* Center the image in its card */
 }
 
 .assignment-card h3 {
@@ -130,11 +133,23 @@ footer {
   .projects {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
   }
+
+  /* Make project images scale down slightly on smaller screens */
+  .projects .assignment-card img {
+    width: 200px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 700px) {
   .assignments,
   .projects {
     grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+
+  /* Make project images even smaller on mobile */
+  .projects .assignment-card img {
+    width: 180px;
+    height: 110px;
   }
 }
