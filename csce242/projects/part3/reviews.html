@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reviews – The Burger Tavern</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">The Burger Tavern</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu & Specials</a>
+        <a href="order.html">Order</a>
+        <a href="reviews.html" aria-current="page">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid grid-2">
+      <div class="card">
+        <h2>Recent Reviews</h2>
+        <div class="menu-item">
+          <img class="img-cover ratio-1x1" src="https://picsum.photos/90?grayscale" alt="">
+          <div>
+            <h3>Ashley P.</h3>
+            <p>“Crispy edges on the smash burger = perfect. Fries travel well.”</p>
+          </div>
+          <div class="price">★★★★★</div>
+        </div>
+        <div class="menu-item">
+          <img class="img-cover ratio-1x1" src="https://picsum.photos/91?grayscale" alt="">
+          <div>
+            <h3>Marco G.</h3>
+            <p>“Monthly special was legit spicy. Loved it.”</p>
+          </div>
+          <div class="price">★★★★☆</div>
+        </div>
+        <div class="menu-item">
+          <img class="img-cover ratio-1x1" src="https://picsum.photos/92?grayscale" alt="">
+          <div>
+            <h3>Taylor W.</h3>
+            <p>“Ordering was easy. Quick pickup.”</p>
+          </div>
+          <div class="price">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Leave a Review</h2>
+        <form>
+          <label>Your Name
+            <input class="input" type="text" placeholder="Name" />
+          </label>
+          <label>Rating
+            <select class="input">
+              <option>★★★★★</option>
+              <option>★★★★☆</option>
+              <option>★★★☆☆</option>
+              <option>★★☆☆☆</option>
+              <option>★☆☆☆☆</option>
+            </select>
+          </label>
+          <label>Your Review
+            <textarea class="input" rows="5" placeholder="Write a short review..."></textarea>
+          </label>
+          <button class="btn" type="button">Submit (placeholder)</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      <span>© The Burger Tavern</span>
+      <span>Reviews</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order – The Burger Tavern</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">The Burger Tavern</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu & Specials</a>
+        <a href="order.html" aria-current="page">Order</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid grid-2">
+      <div class="card">
+        <h2>Order Details</h2>
+        <form>
+          <label>Choose Item
+            <select class="input">
+              <option>Classic Smash</option>
+              <option>BBQ Bacon</option>
+              <option>Triple Cheese Melt</option>
+              <option>Carolina Fire</option>
+              <option>Veggie Vibes</option>
+            </select>
+          </label>
+
+          <label>Add-Ons
+            <input class="input" type="text" placeholder="e.g., extra cheese, no onions" />
+          </label>
+
+          <label>Pickup or Delivery
+            <select class="input">
+              <option>Pickup</option>
+              <option>Delivery</option>
+            </select>
+          </label>
+
+          <label>Preferred Time
+            <input class="input" type="time" />
+          </label>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Payment Information</h2>
+        <form>
+          <label>Name on Card
+            <input class="input" type="text" placeholder="Name" />
+          </label>
+          <label>Card Number
+            <input class="input" type="text" placeholder="0000 0000 0000 0000" />
+          </label>
+          <div class="grid grid-2">
+            <label>Expiry
+              <input class="input" type="text" placeholder="MM/YY" />
+            </label>
+            <label>Security Code
+              <input class="input" type="text" placeholder="CVC" />
+            </label>
+          </div>
+          <label>Receipt Preference
+            <select class="input">
+              <option>Email</option>
+              <option>Paper</option>
+            </select>
+          </label>
+          <button class="btn" type="button">Submit (placeholder)</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      <span>© The Burger Tavern</span>
+      <span>Order</span>
+    </div>
+  </footer>
+</body>
+</html>
