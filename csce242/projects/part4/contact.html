@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Burger Tavern – Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">The Burger Tavern</div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">Menu</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="order.html" class="btn" style="padding:8px 12px;">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid grid-2">
+      <div class="card">
+        <h1>Contact Us</h1>
+        <p>Questions about the menu or a large order? Send a note and we’ll reply soon.</p>
+        <form>
+          <label for="fullname">Full Name</label>
+          <input class="input" id="fullname" name="fullname" placeholder="Jane Doe">
+
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea class="input" id="message" name="message" rows="5" placeholder="How can we help?"></textarea>
+
+          <button class="btn" type="button">Send</button>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Visit</h2>
+        <p>123 Burger Lane, Columbia, SC</p>
+        <p>Sun–Thu 11am–9pm · Fri–Sat 11am–10pm</p>
+        <div class="ratio-16x9">
+          <img class="img-cover" src="../../assignments/images/map.jpeg" alt="Map to The Burger Tavern">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      <span>© The Burger Tavern</span>
+      <span><a href="contact.html">Contact</a> · <a href="about.html">About</a></span>
+    </div>
+  </footer>
+</body>
+</html>

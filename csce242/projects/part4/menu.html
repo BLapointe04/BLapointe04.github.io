@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Burger Tavern – Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">The Burger Tavern</div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">Menu</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html" aria-current="page">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html" class="btn" style="padding:8px 12px;">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Menu</h1>
+      <p class="lead">Everything is made to order. Tell us how you like it.</p>
+    </section>
+
+    <section class="grid grid-2">
+      <div class="card">
+        <h2>Burgers</h2>
+
+        <details class="menu-details" open>
+          <summary>Classic Smash</summary>
+          <div class="menu-item">
+            <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/burger1.jpeg" alt="Classic burger"></div>
+            <div>
+              <h3>Single or Double</h3>
+              <p>American cheese, pickles, griddled onions, Tavern sauce.</p>
+            </div>
+            <div class="price">$7 / $9</div>
+          </div>
+        </details>
+
+        <details class="menu-details">
+          <summary>Spicy Crunch</summary>
+          <div class="menu-item">
+            <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/burger5.jpeg" alt="Spicy burger"></div>
+            <div>
+              <h3>Jalapeño + Crunch</h3>
+              <p>Crispy onions, jalapeños, pepper jack, chipotle mayo.</p>
+            </div>
+            <div class="price">$10</div>
+          </div>
+        </details>
+
+        <details class="menu-details">
+          <summary>Veggie Garden</summary>
+          <div class="menu-item">
+            <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/burger6.jpeg" alt="Veggie burger"></div>
+            <div>
+              <h3>Grilled Veggie Patty</h3>
+              <p>Lettuce, tomato, onion, pickles, garlic aioli.</p>
+            </div>
+            <div class="price">$9</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="card">
+        <h2>Fries & Sides</h2>
+
+        <details class="menu-details" open>
+          <summary>Straight-Cut Fries</summary>
+          <div class="menu-item">
+            <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/fries1.jpeg" alt="Fries"></div>
+            <div>
+              <h3>Lightly Salted</h3>
+              <p>Made fresh. Add cheese or chili if you want.</p>
+            </div>
+            <div class="price">$4</div>
+          </div>
+        </details>
+
+        <details class="menu-details">
+          <summary>Curly Fries</summary>
+          <div class="menu-item">
+            <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/fries2.jpeg" alt="Curly fries"></div>
+            <div>
+              <h3>Seasoned Spirals</h3>
+              <p>Great with ranch or our smoky ketchup.</p>
+            </div>
+            <div class="price">$5</div>
+          </div>
+        </details>
+
+        <details class="menu-details">
+          <summary>Chicken Tenders</summary>
+          <div class="menu-item">
+            <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/chicken1.jpeg" alt="Chicken tenders"></div>
+            <div>
+              <h3>Hand-Breaded</h3>
+              <p>Comes with your choice of sauce.</p>
+            </div>
+            <div class="price">$8</div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Monthly Specials</h2>
+      <div class="grid grid-3">
+        <article>
+          <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/mburger.jpeg" alt="Special burger"></div>
+          <h3>Maple Bacon Melt</h3>
+          <p>Double smash, maple glaze, bacon, cheddar.</p>
+          <div class="price">$12</div>
+        </article>
+        <article>
+          <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/hchicken.jpeg" alt="Special chicken"></div>
+          <h3>Hot Honey Tender Box</h3>
+          <p>Tenders, hot honey drizzle, pickles.</p>
+          <div class="price">$11</div>
+        </article>
+        <article>
+          <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/pfries.jpeg" alt="Special fries"></div>
+          <h3>Cacio e Pepe Fries</h3>
+          <p>Pecorino and cracked pepper.</p>
+          <div class="price">$7</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      <span>© The Burger Tavern</span>
+      <span><a href="contact.html">Contact</a> · <a href="about.html">About</a></span>
+    </div>
+  </footer>
+</body>
+</html>

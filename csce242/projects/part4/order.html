@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Burger Tavern – Order Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">The Burger Tavern</div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">Menu</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html" aria-current="page" class="btn" style="padding:8px 12px;">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Order Online</h1>
+      <p class="lead">Build your meal and pick it up hot.</p>
+
+      <form>
+        <fieldset>
+          <legend>Choose a Burger</legend>
+          <label><input type="radio" name="burger" value="classic" checked> Classic Smash</label>
+          <label><input type="radio" name="burger" value="double"> Double Smash</label>
+          <label><input type="radio" name="burger" value="spicy"> Spicy Crunch</label>
+          <label><input type="radio" name="burger" value="veggie"> Veggie Garden</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Add Sides</legend>
+          <label><input type="checkbox" name="side" value="fries"> Fries</label>
+          <label><input type="checkbox" name="side" value="curly"> Curly Fries</label>
+          <label><input type="checkbox" name="side" value="tenders"> Chicken Tenders</label>
+        </fieldset>
+
+        <label for="notes">Notes</label>
+        <textarea class="input" id="notes" rows="4" placeholder="Extra pickles, sauce on side, etc."></textarea>
+
+        <button class="btn" type="button">Checkout</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      <span>© The Burger Tavern</span>
+      <span><a href="contact.html">Contact</a> · <a href="about.html">About</a></span>
+    </div>
+  </footer>
+</body>
+</html>

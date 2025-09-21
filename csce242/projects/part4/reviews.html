@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Burger Tavern – Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">The Burger Tavern</div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">Menu</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html" aria-current="page">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html" class="btn" style="padding:8px 12px;">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>What People Say</h1>
+      <div class="grid grid-3">
+        <blockquote>
+          <p>“Best smash burger in town. Crispy edges, juicy center.”</p>
+          <cite>— Taylor</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Curly fries are perfect. Try them with ranch.”</p>
+          <cite>— Jordan</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Quick pickup, still hot when I got home.”</p>
+          <cite>— Casey</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Share Your Review</h2>
+      <form>
+        <label for="name">Name</label>
+        <input class="input" id="name" name="name" placeholder="Your name">
+        <label for="review">Review</label>
+        <textarea id="review" name="review" rows="4" class="input" placeholder="Tell us what you liked"></textarea>
+        <button class="btn" type="button">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      <span>© The Burger Tavern</span>
+      <span><a href="contact.html">Contact</a> · <a href="about.html">About</a></span>
+    </div>
+  </footer>
+</body>
+</html>
