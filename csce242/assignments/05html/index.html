@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment 8 — If Statements</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <!-- header -->
+      <header class="head">
+        <h1>Assignment 8</h1>
+        <h2>If Statements</h2>
+      </header>
+
+      <!-- mnu -->
+      <nav class="menu">
+        <div class="bar">
+          <button id="toggleBtn" class="toggle" aria-expanded="false" aria-controls="menuList">
+            Menu ▼
+          </button>
+          <ul id="menuList" class="items" role="menubar">
+            <li role="menuitem" tabindex="0" data-goto="planting">Exercise 1</li>
+            <li role="menuitem" tabindex="0" data-goto="clock">Exercise 2</li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <main class="content">
+        <!-- planting -->
+        <section id="planting" class="section active" aria-labelledby="plantingTitle">
+          <div class="panel">
+            <p id="plantingTitle" class="center strong">Planting</p>
+
+            <p class="center">How many days has it been since watering your plant?</p>
+
+            <div class="row">
+              <input id="days" type="range" min="1" max="12" value="1" aria-label="Days since watering">
+              <output id="daysOut" for="days">1</output> days
+            </div>
+
+            <div id="plantPic" class="center big" aria-hidden="true">🌱</div>
+            <p id="line1" class="center">It’s been 1 day since watering your plant</p>
+            <p id="line2" class="center muted">Your plant is healthy and happy</p>
+          </div>
+
+          <p class="footer">@portiaplante.com</p>
+        </section>
+
+        <!-- clock -->
+        <section id="clock" class="section" aria-labelledby="clockTitle">
+          <div class="panel">
+            <p id="clockTitle" class="center strong">Our Digital Clock</p>
+            <div id="clockTime" class="clock">10:00 am</div>
+          </div>
+
+          <p class="footer">@portiaplante.com</p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
