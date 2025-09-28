@@ -13,12 +13,18 @@
 
 *{ box-sizing: border-box; }
 html,body{ margin:0; padding:0; }
+
+/* NEW: make footer stick to bottom on short pages */
+html, body { height: 100%; }
 body{
   font-family: Arial, sans-serif;
   background: var(--bg);
   color: var(--ink);
   line-height: 1.5;
+  display: flex;            /* footer stick */
+  flex-direction: column;   /* footer stick */
 }
+main{ flex: 1; }            /* footer stick */
 
 .container{
   width: min(100%, var(--container));
@@ -117,6 +123,7 @@ section{ margin: 28px 0; }
 section h2{ margin: 0 0 8px; font-size: 24px; }
 .lead{ color: var(--muted); margin: 0 0 16px; }
 
+/* menu */
 .menu-item{
   display: grid;
   grid-template-columns: 96px 1fr max-content;

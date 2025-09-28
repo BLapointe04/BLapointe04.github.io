@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Burger Tavern – Contact</title>
+  <title>The Burger Tavern – Contact & Reviews</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="styles.css" rel="stylesheet">
 </head>
@@ -15,18 +15,24 @@
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="contact.html" aria-current="page">Contact & Reviews</a>
         <a href="order.html" class="btn" style="padding:8px 12px;">Order</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
+    <section style="margin-top:18px">
+      <h1>Contact & Reviews</h1>
+      <p class="lead">Send us a message or share what you think — we’d love to hear from you.</p>
+    </section>
+
     <section class="grid grid-2">
+      <!-- Contact Form -->
       <div class="card">
-        <h1>Contact Us</h1>
-        <p>Questions about the menu or a large order? Send a note and we’ll reply soon.</p>
+        <h2>Contact Us</h2>
+        <p>Have a question, want to place a big order, or just say hi? Fill out the form below.</p>
+
         <form>
           <label for="fullname">Full Name</label>
           <input class="input" id="fullname" name="fullname" placeholder="Jane Doe">
@@ -40,13 +46,36 @@
           <button class="btn" type="button">Send</button>
         </form>
       </div>
+
+      <!-- Reviews Section -->
       <div class="card">
-        <h2>Visit</h2>
-        <p>123 Burger Lane, Columbia, SC</p>
-        <p>Sun–Thu 11am–9pm · Fri–Sat 11am–10pm</p>
-        <div class="ratio-16x9">
-          <img class="img-cover" src="../../assignments/images/map.jpeg" alt="Map to The Burger Tavern">
+        <h2>Reviews</h2>
+        <p>See what others are saying about Burger Tavern and leave your own review below.</p>
+
+        <div style="margin-bottom: 16px;">
+          <blockquote>
+            <p>“Best smash burger in town. Crispy edges, juicy center.”</p>
+            <cite>— Taylor</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Curly fries are perfect. Try them with ranch.”</p>
+            <cite>— Jordan</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Quick pickup, still hot when I got home.”</p>
+            <cite>— Casey</cite>
+          </blockquote>
         </div>
+
+        <form>
+          <label for="name">Your Name</label>
+          <input class="input" id="name" name="name" placeholder="Your name">
+
+          <label for="review">Leave a Review</label>
+          <textarea id="review" name="review" rows="4" class="input" placeholder="Tell us what you liked"></textarea>
+
+          <button class="btn" type="button">Submit</button>
+        </form>
       </div>
     </section>
   </main>
@@ -54,7 +83,7 @@
   <footer>
     <div class="container inner">
       <span>© The Burger Tavern</span>
-      <span><a href="contact.html">Contact</a> · <a href="about.html">About</a></span>
+      <span><a href="contact.html">Contact & Reviews</a> · <a href="about.html">About</a></span>
     </div>
   </footer>
 </body>
