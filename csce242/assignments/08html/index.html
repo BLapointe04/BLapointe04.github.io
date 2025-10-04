@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Assignment 11 — Classes</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Classes</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <h1 id="main-heading">Portraits</h1>
+  <section>
+    <h3>of</h3>
+    <h1>Things</h1>
+    <section id="main" class="flex-container"></section>
+  </section>
 
-  <h1 class="title">Assignment 11 – Classes</h1>
-  <section id="gallery"></section>
-
-  <div id="infoModal" class="w3-modal">
+  <div id="infoModal" class="w3-modal" aria-hidden="true">
     <div class="w3-modal-content w3-animate-top modal-box">
       <header class="w3-container w3-light-grey">
-        <span id="modalClose" class="w3-button w3-display-topright">×</span>
+        <span id="modalClose" class="w3-button w3-display-topright" title="Close">×</span>
         <h3 id="modalTitle"></h3>
-        <div id="modalBy"></div>
+        <p id="modalBy"></p>
       </header>
       <div class="w3-container">
-        <div id="modalImgWrap"></div>
+        <div id="modalImgWrap" class="modal-img"></div>
       </div>
     </div>
   </div>
-
-  <script src="app.js"></script>
 </body>
 </html>
