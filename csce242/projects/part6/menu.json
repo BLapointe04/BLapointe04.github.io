@@ -1,0 +1,67 @@
+[
+    {
+      "_id": 1,
+      "name": "Classic Burger",
+      "category": "Burger",
+      "price": 7.99,
+      "description": "A juicy beef patty with cheese, lettuce, tomato, and our house sauce.",
+      "img_name": "../../assignments/images/burger1.jpg"
+    },
+    {
+      "_id": 2,
+      "name": "Double Smash",
+      "category": "Burger",
+      "price": 9.49,
+      "description": "Two crispy-edged patties layered with melted cheese and pickles.",
+      "img_name": "../../assignments/images/burger2.jpg"
+    },
+    {
+      "_id": 3,
+      "name": "Spicy Crunch",
+      "category": "Burger",
+      "price": 8.99,
+      "description": "Pepper jack cheese, jalapeños, and spicy mayo on a toasted bun.",
+      "img_name": "../../assignments/images/spicy.jpg"
+    },
+    {
+      "_id": 4,
+      "name": "Veggie Delight",
+      "category": "Burger",
+      "price": 8.49,
+      "description": "Grilled veggie patty topped with avocado, lettuce, and tomato.",
+      "img_name": "../../assignments/images/veggie.jpg"
+    },
+    {
+      "_id": 5,
+      "name": "Classic Fries",
+      "category": "Side",
+      "price": 3.99,
+      "description": "Golden, crispy fries lightly salted for the perfect crunch.",
+      "img_name": "../../assignments/images/fries1.jpg"
+    },
+    {
+      "_id": 6,
+      "name": "Curly Fries",
+      "category": "Side",
+      "price": 4.49,
+      "description": "Seasoned curly fries with a hint of paprika and garlic.",
+      "img_name": "../../assignments/images/fries2.jpg"
+    },
+    {
+      "_id": 7,
+      "name": "Chicken Tenders",
+      "category": "Side",
+      "price": 6.99,
+      "description": "Crispy hand-breaded chicken tenders served with your choice of sauce.",
+      "img_name": "../../assignments/images/tenders.jpg"
+    },
+    {
+      "_id": 8,
+      "name": "Maple Bacon Melt",
+      "category": "Special",
+      "price": 11.99,
+      "description": "Double patty burger with bacon, cheddar, and a maple glaze.",
+      "img_name": "../../assignments/images/maple.jpg"
+    }
+  ]
+  

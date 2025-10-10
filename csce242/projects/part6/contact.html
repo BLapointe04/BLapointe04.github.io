@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Burger Tavern – Contact & Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">The Burger Tavern</div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">Menu</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact & Reviews</a>
+        <a href="order.html" class="btn" style="padding:8px 12px;">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="margin-top:18px">
+      <h1>Contact & Reviews</h1>
+      <p class="lead">Send us a message or share what you think — we’d love to hear from you.</p>
+    </section>
+
+    <section class="grid grid-2">
+      <!-- Contact Form -->
+      <div class="card">
+        <h2>Contact Us</h2>
+        <p>Have a question, want to place a big order, or just say hi? Fill out the form below.</p>
+
+        <form>
+          <label for="fullname">Full Name</label>
+          <input class="input" id="fullname" name="fullname" placeholder="Jane Doe">
+
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea class="input" id="message" name="message" rows="5" placeholder="How can we help?"></textarea>
+
+          <button class="btn" type="button">Send</button>
+        </form>
+      </div>
+
+      <!-- Reviews Section -->
+      <div class="card">
+        <h2>Reviews</h2>
+        <p>See what others are saying about Burger Tavern and leave your own review below.</p>
+
+        <div style="margin-bottom: 16px;">
+          <blockquote>
+            <p>“Best smash burger in town. Crispy edges, juicy center.”</p>
+            <cite>— Taylor</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Curly fries are perfect. Try them with ranch.”</p>
+            <cite>— Jordan</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Quick pickup, still hot when I got home.”</p>
+            <cite>— Casey</cite>
+          </blockquote>
+        </div>
+
+        <form>
+          <label for="name">Your Name</label>
+          <input class="input" id="name" name="name" placeholder="Your name">
+
+          <label for="review">Leave a Review</label>
+          <textarea id="review" name="review" rows="4" class="input" placeholder="Tell us what you liked"></textarea>
+
+          <button class="btn" type="button">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      <span>© The Burger Tavern</span>
+      <span><a href="contact.html">Contact & Reviews</a> · <a href="about.html">About</a></span>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="projects/part6/script.js" defer></script>
