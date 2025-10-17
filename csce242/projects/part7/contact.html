@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Burger Tavern – Contact & Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">The Burger Tavern</div>
+      <button class="nav-toggle" aria-label="Menu">Menu</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact & Reviews</a>
+        <a href="order.html" class="btn" style="padding:8px 12px;">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid grid-2">
+      <!-- Left: Contact form -->
+      <div class="card">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to place a large order? Fill out the form below.</p>
+
+        <!-- Inline success/error lives here (no redirect) -->
+        <div id="form-status" class="status" hidden></div>
+
+        <!-- IMPORTANT: set your Formspree endpoint below -->
+        <form id="contact-form" novalidate
+              data-endpoint="https://formspree.io/f/REPLACE_ME">
+          <label for="fullname">Full Name</label>
+          <input class="input" id="fullname" name="fullname" required minlength="2" placeholder="Jane Doe">
+
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" required placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea class="input" id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+
+      <!-- Right: Reviews + responsive iFrame -->
+      <div class="card">
+        <h2>Reviews</h2>
+        <p>See what others are saying and leave your own review below.</p>
+
+        <div style="margin-bottom: 16px;">
+          <blockquote><p>“Best smash burger in town.”</p><cite>— Taylor</cite></blockquote>
+          <blockquote><p>“Curly fries are perfect.”</p><cite>— Jordan</cite></blockquote>
+          <blockquote><p>“Quick pickup, still hot.”</p><cite>— Casey</cite></blockquote>
+        </div>
+
+        <form id="review-form" novalidate>
+          <label for="name">Your Name</label>
+          <input class="input" id="name" name="name" required minlength="2">
+
+          <label for="review">Leave a Review</label>
+          <textarea class="input" id="review" name="review" rows="4" required></textarea>
+
+          <button class="btn" type="submit">Submit</button>
+        </form>
+
+        <!-- Responsive iFrame: stacks on small screens, two-column on wide -->
+        <div class="ratio-16x9" style="margin-top:16px">
+          <iframe
+            class="img-cover" style="border:0"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Our Kitchen"
+            loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      <span>© The Burger Tavern</span>
+      <span><a href="contact.html">Contact & Reviews</a> · <a href="about.html">About</a></span>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

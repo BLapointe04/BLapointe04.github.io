@@ -1,0 +1,28 @@
+{
+    "categories": [
+      { "name": "Coffee" },
+      { "name": "Tea" },
+      { "name": "Pastries" }
+    ],
+    "items": [
+      {
+        "name": "Espresso",
+        "description": "Rich and bold.",
+        "price": 2.5,
+        "image": "https://picsum.photos/id/27/400/300"
+      },
+      {
+        "name": "Latte",
+        "description": "Smooth with steamed milk.",
+        "price": 3.75,
+        "image": "https://picsum.photos/id/28/400/300"
+      },
+      {
+        "name": "Blueberry Muffin",
+        "description": "Baked fresh daily.",
+        "price": 2.95,
+        "image": "https://picsum.photos/id/29/400/300"
+      }
+    ]
+  }
+  
