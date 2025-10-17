@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menu – The Burger Tavern</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="container topbar">
@@ -20,10 +20,11 @@
   </header>
 
   <main class="container">
-    <h1>Full Menu</h1>
-    <p>Explore our delicious burgers and sides below.</p>
+    <!-- Keep your normal page heading/intro -->
+    <h1>Menu Gallery</h1>
+    <p class="lead">All menu items below are dynamically loaded from a JSON file.</p>
 
-    <!-- JSON gallery reused here too if you want -->
+    <!-- IMPORTANT: this is NOT inside a <ul> -->
     <section id="gallery"></section>
   </main>
 
@@ -34,6 +35,7 @@
     </div>
   </footer>
 
+  <!-- Your single JS file (same as other pages) -->
   <script src="script.js" defer></script>
 </body>
 </html>

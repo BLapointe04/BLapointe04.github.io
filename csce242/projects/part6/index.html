@@ -2,66 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Burger Tavern – Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Burger Tavern</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="container topbar">
-      <div class="brand">The Burger Tavern</div>
-      <button class="nav-toggle" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">Menu</button>
-      <nav>
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">About</a>
-       <!---- <a href="reviews.html">Reviews</a> ---->
-        <a href="contact.html">Contact & Reviews</a>
-        <a href="order.html" class="btn" style="padding:8px 12px;">Order</a>
-      </nav>
-    </div>
+    <h1>The Burger Tavern</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact & Reviews</a>
+    </nav>
   </header>
 
-  <main class="container">
+  <main>
     <section class="hero">
-      <div>
-        <h1>Smash Burgers. Simple Ingredients. Big Flavor.</h1>
-        <p>We keep it straightforward: fresh beef, toasted buns, and sauces made in-house. Grab a classic or try a monthly special. Either way, you’ll leave happy.</p>
-        <div class="cta">
-          <a class="btn" href="menu.html">See the Menu</a>
-          <a class="btn secondary" href="order.html">Order Online</a>
-        </div>
-      </div>
-      <div class="ratio-16x9">
-        <img class="img-cover" src="../../assignments/images/burger4.jpeg" alt="Signature smash burger with fries">
-      </div>
+      <h2>Welcome to The Burger Tavern</h2>
+      <p>Serving up juicy burgers, crispy fries, and comfort food favorites since 2020.</p>
     </section>
 
-    <section class="grid grid-3">
-      <article class="card">
-        <h2>House Classics</h2>
-        <p class="lead">Burgers, tenders, and fries done right. No shortcuts.</p>
-        <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/burger1.jpeg" alt="Classic burger"></div>
-      </article>
-      <article class="card">
-        <h2>Monthly Specials</h2>
-        <p class="lead">Limited runs we rotate every month. When it’s gone, it’s gone.</p>
-        <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/burger2.jpeg" alt="Monthly special burger"></div>
-      </article>
-      <article class="card">
-        <h2>Made for Takeout</h2>
-        <p class="lead">Hot, packed neatly, and ready when you arrive.</p>
-        <div class="ratio-1x1"><img class="img-cover" src="../../assignments/images/burger3.jpeg" alt="Takeout bag and boxes"></div>
-      </article>
+    <section class="features">
+      <h3>Why Dine With Us?</h3>
+      <ul>
+        <li>🍔 100% Fresh Beef</li>
+        <li>🍟 Locally Sourced Ingredients</li>
+        <li>🥤 Friendly Atmosphere & Great Service</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <div class="container inner">
-      <span>© The Burger Tavern</span>
-      <span><a href="contact.html">Contact</a> · <a href="about.html">About</a></span>
-    </div>
+    <p>© The Burger Tavern — <a href="contact.html">Contact & Reviews</a> · <a href="about.html">About</a></p>
   </footer>
 </body>
 </html>
-<script src="projects/part6/script.js" defer></script>

@@ -1,7 +1,7 @@
 
-const JSON_URL = 'https://Blapointe04.github.io/BLapointe04.github.io/csce242/projects/part6/menu.json';
+const JSON_URL = 'https://blapointe04.github.io/csce242/projects/part6/menu.json';
 
-// --- Mobile nav toggle ---
+// --- Mobile nav toggle (keeps your existing behavior) ---
 document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
   const navBtn = document.querySelector('.nav-toggle');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // --- JSON helpers ---
 async function fetchJSON() {
   const r = await fetch(JSON_URL, { cache: 'no-store' });
-  if (!r.ok) throw new Error('Failed to load JSON');
+  if (!r.ok) throw new Error(`Failed to load JSON (${r.status})`);
   return r.json();
 }
 
@@ -37,12 +37,12 @@ function cardHTML(it) {
 function detailHTML(it) {
   return `
     <article class="card">
-      <img src="${it.img_name}" alt="${it.name}" style="max-width:100%;border-radius:12px;">
+      <img src="${it.img_name}" alt="${it.name}" style="max-width:100%;height:auto;border-radius:12px;margin:8px 0 12px;">
       <h1>${it.name}</h1>
-      <p>${it.description}</p>
-      <ul>
+      <p class="lead">${it.description}</p>
+      <ul style="padding-left:18px;">
         <li><strong>Category:</strong> ${it.category}</li>
-        <li><strong>Price:</strong> $${it.price.toFixed(2)}</li>
+        <li><strong>Price:</strong> $${Number(it.price).toFixed(2)}</li>
         <li><strong>ID:</strong> ${it._id}</li>
       </ul>
       <p><a class="btn" href="index.html">← Back to Gallery</a></p>
@@ -50,26 +50,28 @@ function detailHTML(it) {
 }
 
 async function renderGallery() {
-  const box = document.getElementById('gallery');
-  if (!box) return;
+  const mount = document.getElementById('gallery');
+  if (!mount) return;
   try {
     const data = await fetchJSON();
-    box.innerHTML = data.map(cardHTML).join('');
-  } catch {
-    box.innerHTML = '<p>Error loading menu data.</p>';
+    mount.innerHTML = data.map(cardHTML).join('');
+  } catch (e) {
+    console.error(e);
+    mount.innerHTML = '<p class="card" style="padding:14px;">Error loading data.</p>';
   }
 }
 
 async function renderItem() {
-  const box = document.getElementById('item');
-  if (!box) return;
+  const mount = document.getElementById('item');
+  if (!mount) return;
   try {
     const id = Number(new URLSearchParams(location.search).get('id'));
     const data = await fetchJSON();
     const it = data.find(x => x._id === id);
-    box.innerHTML = it ? detailHTML(it) : '<h1>Item not found</h1>';
-  } catch {
-    box.innerHTML = '<p>Error loading item data.</p>';
+    mount.innerHTML = it ? detailHTML(it) : '<h1>Item not found</h1>';
+  } catch (e) {
+    console.error(e);
+    mount.innerHTML = '<p class="card" style="padding:14px;">Error loading item.</p>';
   }
 }
 
